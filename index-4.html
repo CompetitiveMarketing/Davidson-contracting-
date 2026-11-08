@@ -9,137 +9,2205 @@
 <title>Davidson Contracting | Carpentry &amp; Timber Work</title>
 <link rel="icon" type="image/png" href="1000008222.png">
 <link rel="preconnect" href="https://images.pexels.com">
-<!-- GITHUB PAGES SETUP
-  1. Save this whole file as index.html in your repository.
-  2. Upload the supplied logo beside it, named exactly 1000008222.png.
-  3. Fill in the settings below. Leave phone/email empty until confirmed.
-  4. Confirm the proposed services and wording, then set preview to false.
-  Photos load from Pexels; no photo uploads or build tools are required.
-  The enquiry form prepares a draft, then opens the visitor's email app.
-  It DOES NOT silently submit a lead. A form service can be added later.
+
+<!--
+GITHUB PAGES SETUP
+
+1. Save this file as index.html.
+2. Upload your logo beside it as 1000008222.png.
+3. Fill in the confirmed business details below.
+4. Confirm the services, then change preview to false.
+
+Photos load from Pexels.
+
+The enquiry form prepares a draft and opens the visitor's
+email app once the business email is added.
+It does not automatically submit enquiries.
 -->
+
 <script>
 const BUSINESS = {
-  phone: "",                  // e.g. 04xx xxx xxx — use the real number
-  email: "",                  // the company's confirmed inbox
-  serviceArea: "",            // e.g. suburb/city and surrounding areas
-  preview: true               // change only after business details are approved
+  phone: "",
+  email: "",
+  serviceArea: "",
+  preview: true
 };
 </script>
+
 <style>
-:root{--ink:#202520;--deep:#161a17;--paper:#f4f1e9;--white:#fffdf7;--copper:#cf936b;--copper-dark:#865031;--muted:#686c63;--line:#d7d8ce;--max:1240px}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:110px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}button,input,select,textarea{font:inherit}button,a,input,textarea,select{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}button{cursor:pointer}img{max-width:100%;display:block}h1,h2,h3,p,figure{margin:0}h1,h2,h3{font-weight:600;line-height:1.03;letter-spacing:-.045em}h2{font-size:clamp(2.3rem,4.8vw,4.5rem)}h3{font-size:1.4rem}::selection{background:var(--copper);color:var(--deep)}:focus-visible{outline:3px solid var(--copper);outline-offset:5px}[hidden]{display:none!important}.wrap{width:min(var(--max),calc(100% - 96px));margin:auto}.section{padding:108px 0}.eyebrow{display:flex;align-items:center;gap:12px;font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-bottom:24px}.eyebrow:before{content:"";display:block;width:26px;height:2px;background:var(--copper)}.lead{font-size:1.08rem;color:var(--muted);line-height:1.8}.button{display:inline-flex;align-items:center;justify-content:space-between;gap:26px;min-height:54px;padding:15px 24px;border:1px solid transparent;background:var(--copper);color:var(--deep);font-size:.8rem;font-weight:700;transition:background .2s,transform .2s}.button:hover{background:#dfa57e;transform:translateY(-2px)}.button span[aria-hidden]{font-size:1.25rem;line-height:1}.button.dark{background:var(--ink);color:var(--white)}.button.dark:hover{background:#364136}.button.outline{background:transparent;border-color:#ffffff55;color:var(--white)}.button.outline:hover{background:#ffffff13}.text-link{display:inline-flex;align-items:center;gap:28px;font-size:.8rem;font-weight:700;padding:10px 0;border-bottom:1px solid currentColor}.skip{position:fixed;top:8px;left:8px;transform:translateY(-160%);z-index:100;background:white;color:black;padding:10px}.skip:focus{transform:none}
-.preview-bar{background:var(--copper);color:var(--deep);font-size:.66rem;letter-spacing:.06em;text-align:center;padding:6px 16px}.site-header{background:var(--ink);color:var(--white);position:sticky;top:0;z-index:20;border-bottom:1px solid #ffffff16}.nav-row{min-height:94px;display:flex;align-items:center;justify-content:space-between;gap:32px}.brand{display:flex;align-items:center;gap:13px;flex-shrink:0}.brand img{width:82px;height:62px;object-fit:contain;filter:invert(1)}.brand-name{display:block;line-height:1.1;font-size:1.12rem;letter-spacing:.06em;font-weight:800}.brand-name small{display:block;font-size:.57rem;letter-spacing:.26em;margin-top:7px;font-weight:400}.nav-links{display:flex;align-items:center;gap:28px;font-size:.73rem}.nav-links>a:not(.button){padding:12px 0;color:#d9ddd4}.nav-links>a:hover{color:white}.nav-links .button{min-height:44px;padding:11px 19px;font-size:.71rem}.phone-link{font-size:.78rem;white-space:nowrap}.menu-button{display:none;border:1px solid #ffffff4f;background:none;color:white;min-width:48px;min-height:44px;padding:10px;font-size:.72rem}.mobile-nav{padding:8px 24px 24px;border-top:1px solid #ffffff20}.mobile-nav a{display:block;padding:12px 0}
-.hero{position:relative;min-height:690px;background:var(--deep);color:var(--white);isolation:isolate;overflow:hidden}.hero-image{position:absolute;z-index:-3;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 48%}.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(15,21,17,.97) 0%,rgba(15,21,17,.86) 30%,rgba(15,21,17,.28) 72%,rgba(15,21,17,.1) 100%)}.hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,#141a17a8,transparent 40%)}.hero-inner{padding:91px 0 102px;position:relative}.hero .eyebrow{color:#e4d4c2}.hero h1{font-size:clamp(3.3rem,6.4vw,6.05rem);max-width:800px;line-height:.98;letter-spacing:-.055em}.hero h1 em{font-style:normal;color:#dba37c}.hero-copy{max-width:440px;color:#d1d5cb;margin:28px 0 33px;font-size:1rem;line-height:1.85}.hero-actions{display:flex;gap:14px;flex-wrap:wrap}.hero-meta{display:flex;gap:25px;margin-top:40px;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:#c9cfc4}.hero-meta span+span{border-left:1px solid #ffffff36;padding-left:25px}.photo-tag{position:absolute;right:30px;bottom:23px;color:#fff;font-size:.57rem;letter-spacing:.1em;text-transform:uppercase;text-shadow:0 1px 5px #000;background:#18211980;padding:5px 9px}.hero-side{position:absolute;right:0;bottom:102px;width:225px;border-top:1px solid #ffffff60;padding-top:17px;font-size:.8rem;color:#e0e4d9}.hero-side strong{display:block;font-size:.58rem;letter-spacing:.15em;margin-bottom:9px;color:var(--copper)}
-.service-strip{background:var(--ink);color:#e9ebe2;border-top:1px solid #ffffff20}.strip-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:23px 0;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase}.strip-inner span{display:flex;align-items:center;gap:18px}.strip-inner span:before{content:"+";font-size:1rem;color:var(--copper)}
-.section-top{display:flex;justify-content:space-between;align-items:end;gap:48px;margin-bottom:48px}.section-top .lead{max-width:340px;font-size:.92rem}.services-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:58px;align-items:stretch}.service-photo{position:relative;min-height:535px;background:#d5d2c8;overflow:hidden}.service-photo>img{width:100%;height:100%;object-fit:cover;position:absolute;object-position:57% center}.service-photo-caption{position:absolute;bottom:0;left:0;right:0;padding:64px 28px 25px;background:linear-gradient(transparent,#0d1713dd);color:white}.service-photo-caption strong{font-size:1.8rem;letter-spacing:-.04em;font-weight:500;display:block}.service-photo-caption span{font-size:.61rem;letter-spacing:.1em;text-transform:uppercase;color:#e3d5c8}.service-list{border-top:1px solid var(--line)}.service-item{padding:26px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:36px 1fr 24px;gap:15px;transition:padding .2s}.service-item:hover{padding-left:9px}.service-item>.number{font-size:.62rem;letter-spacing:.06em;color:var(--copper-dark);padding-top:7px}.service-item h3{font-size:1.45rem;margin-bottom:10px}.service-item p{font-size:.84rem;color:var(--muted);max-width:350px}.service-item>.arrow{padding-top:1px;font-size:1.2rem}.service-bottom{padding-top:24px;font-size:.8rem;color:var(--muted)}.service-bottom a{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
-.approach{background:#e7e8de;border-top:1px solid #daddd1;border-bottom:1px solid #daddd1}.approach-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px;align-items:center}.approach h2{font-size:clamp(2.5rem,4vw,3.8rem)}.approach-copy>p{font-size:1.05rem;line-height:1.85;color:#4c564a;max-width:590px}.principles{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:34px;padding-top:29px;border-top:1px solid #c3c8bb}.principles h3{font-size:.92rem;letter-spacing:-.02em;margin-bottom:9px}.principles p{font-size:.79rem;color:#5f695c}.round-mark{width:95px;margin-top:35px;opacity:.85}.round-mark img{width:100%;height:auto}
-.inspiration{background:var(--deep);color:var(--white)}.inspiration .lead{color:#b4bcb0}.image-grid{display:grid;grid-template-columns:1.55fr 1fr;gap:22px}.image-card{position:relative;display:block;width:100%;padding:0;background:#303b30;border:0;color:white;text-align:left;overflow:hidden}.image-card img{width:100%;height:420px;object-fit:cover;transition:transform .6s}.image-card:hover img{transform:scale(1.035)}.image-card:after{content:"";position:absolute;inset:40% 0 0;background:linear-gradient(transparent,#101910df);pointer-events:none}.image-card .caption{position:absolute;bottom:27px;left:28px;right:28px;z-index:2}.image-card .caption small{font-size:.58rem;text-transform:uppercase;letter-spacing:.16em;color:#ded3c4}.image-card .caption strong{display:flex;align-items:center;justify-content:space-between;font-size:1.6rem;font-weight:500;letter-spacing:-.03em;margin-top:5px}.image-card .caption strong span{font-size:1.5rem;font-weight:400}.image-note{margin-top:18px;font-size:.7rem;color:#adb7a7}.image-note a{text-decoration:underline;text-underline-offset:3px}
-.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:50px}.step{padding-top:24px;border-top:1px solid #bec3b4}.step-number{display:inline-block;color:var(--copper-dark);font-size:.67rem;margin-bottom:35px}.step h3{font-size:1.65rem;margin-bottom:15px}.step p{font-size:.86rem;color:var(--muted);max-width:310px}.faq{padding-top:0}.faq-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;border-top:1px solid var(--line);padding-top:72px}.faq h2{font-size:clamp(2.3rem,4vw,3.5rem)}details{border-bottom:1px solid var(--line)}summary{position:relative;list-style:none;cursor:pointer;padding:23px 40px 23px 0;font-size:.88rem;font-weight:700}summary::-webkit-details-marker{display:none}summary:after{content:"+";position:absolute;right:0;top:19px;font-size:1.35rem;font-weight:400;color:var(--copper-dark)}details[open] summary:after{content:"−"}details p{font-size:.84rem;line-height:1.8;color:var(--muted);padding:0 30px 24px 0}
-.contact{background:var(--ink);color:var(--white);position:relative;overflow:hidden}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;position:relative}.contact h2{font-size:clamp(3rem,4.9vw,4.6rem)}.contact h2 em{color:var(--copper);font-style:normal}.contact .lead{color:#bcc4b6;margin-top:27px;font-size:.95rem;max-width:380px}.contact-methods{margin-top:35px;display:flex;flex-direction:column;align-items:start;gap:10px}.contact-methods a{font-size:1.1rem;border-bottom:1px solid #ffffff40;overflow-wrap:anywhere;max-width:100%}.contact-area{font-size:.78rem;color:#bac2b3;margin-top:24px}.contact-area strong{display:block;font-size:.6rem;letter-spacing:.13em;text-transform:uppercase;color:var(--copper);margin-bottom:5px}.contact-mark{width:140px;height:95px;object-fit:contain;filter:invert(1);margin-top:35px;opacity:.24}.form-intro{font-size:1.35rem;font-weight:500;letter-spacing:-.03em;margin-bottom:8px}.form-note{font-size:.73rem;line-height:1.7;color:#b9c3b3;margin-bottom:24px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.field{min-width:0}.field.full{grid-column:1/-1}label{display:block;font-size:.69rem;color:#d7decf;margin-bottom:8px}input,select,textarea{width:100%;border:1px solid #586353;background:#293027;color:var(--white);border-radius:0;padding:13px 14px;font-size:16px;min-height:50px}input::placeholder,textarea::placeholder{color:#9fa997;font-size:.8rem}textarea{resize:vertical;min-height:115px}select option{color:var(--white);background:var(--ink)}form .button{width:100%;margin-top:20px}.privacy{font-size:.66rem;color:#b4bfac;line-height:1.7;margin-top:14px}.site-footer{background:var(--deep);color:#a3ad9a;padding:35px 0 85px;font-size:.67rem}.footer-row{display:flex;justify-content:space-between;align-items:center;gap:24px}.footer-links{display:flex;gap:24px}.footer-links a:hover{color:white}.footer-detail{margin-top:22px;padding-top:18px;border-top:1px solid #ffffff16;font-size:.65rem;max-width:830px}.footer-detail summary{padding:8px 30px 8px 0;font-size:.66rem;color:#b7c1ad}.footer-detail summary:after{top:1px}.footer-detail p{font-size:.68rem;color:#adb7a7;padding:8px 0 12px}.footer-detail a{text-decoration:underline}.footer-detail details{border:0}.mobile-cta{display:none}
-dialog{border:0;padding:0;background:var(--paper);color:var(--ink);width:min(650px,calc(100% - 32px));max-height:90dvh;box-shadow:0 20px 100px #0006}dialog::backdrop{background:#10160edb}.dialog-body{padding:32px}.dialog-head{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:20px}.dialog-head h2{font-size:1.9rem}.close-button{border:1px solid #b8bcaf;background:transparent;color:var(--ink);width:44px;height:44px;font-size:1.6rem;flex-shrink:0}.dialog-body p{font-size:.85rem;color:var(--muted);margin-bottom:17px}.dialog-body textarea{background:white;color:var(--ink);height:240px;font-size:.85rem;line-height:1.65;border:1px solid #bbc0b3}.dialog-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}.dialog-actions .button{font-size:.75rem}.dialog-status{min-height:1.5em;font-size:.75rem;margin-top:13px;color:var(--copper-dark)}.lightbox{width:min(1100px,calc(100% - 32px));background:var(--deep);color:white}.lightbox .dialog-head{padding:16px 20px;margin:0}.lightbox .dialog-head h2{font-size:1rem;letter-spacing:0}.lightbox .close-button{color:white;border-color:#ffffff66}.lightbox img{width:100%;max-height:70dvh;object-fit:contain}.lightbox figcaption{font-size:.7rem;padding:15px 20px;color:#c8cebf}
-@media(min-width:1500px){.hero{min-height:760px}.hero-inner{padding:115px 0}.hero-side{bottom:115px}}
-@media(max-width:1100px){.wrap{width:calc(100% - 60px)}.nav-links{gap:20px}.nav-links .phone-link{display:none}.brand-name{font-size:1rem}.nav-row{gap:24px}.hero-side{display:none}.services-grid{gap:32px}.approach-grid,.contact-grid{gap:48px}.image-card img{height:370px}}
-@media(max-width:800px){html{scroll-padding-top:90px}.wrap{width:calc(100% - 40px)}.section{padding:72px 0}.nav-row{min-height:78px}.brand img{width:65px;height:51px}.brand-name{font-size:.89rem}.brand-name small{font-size:.49rem}.nav-links{display:none}.menu-button{display:block}.hero{min-height:auto}.hero-inner{padding:78px 0 87px}.hero h1{font-size:clamp(3.3rem,8.7vw,5rem);max-width:650px}.hero-copy{font-size:.93rem;max-width:390px}.hero:before{background:linear-gradient(90deg,#101911ed,#1019118c)}.hero-image{object-position:61% center}.hero-meta{font-size:.58rem;gap:14px}.hero-meta span+span{padding-left:14px}.photo-tag{right:20px;bottom:15px}.strip-inner{display:grid;grid-template-columns:1fr 1fr;padding:21px 0;gap:13px;font-size:.58rem}.strip-inner span{gap:11px}.section-top{gap:25px;align-items:start;flex-direction:column;margin-bottom:35px}.section-top .lead{max-width:520px}.services-grid{grid-template-columns:1fr}.service-photo{min-height:390px;max-height:460px}.service-photo>img{object-position:50% 40%}.service-item{padding:24px 0}.approach-grid{grid-template-columns:1fr;gap:35px}.round-mark{display:none}.principles{gap:25px}.image-grid{grid-template-columns:1fr 1fr;gap:15px}.image-card img{height:320px}.image-card .caption{left:18px;right:18px;bottom:20px}.image-card .caption strong{font-size:1.25rem;gap:10px}.process-grid{gap:26px}.step h3{font-size:1.35rem}.step p{font-size:.8rem}.faq{padding-top:0}.faq-grid{grid-template-columns:1fr;gap:26px;padding-top:50px}.contact-grid{grid-template-columns:1fr;gap:45px}.contact h2{font-size:3.6rem}.contact-mark{display:none}.contact .lead{max-width:490px}.footer-row{align-items:start;flex-direction:column;gap:17px}.site-footer{padding-bottom:105px}.mobile-cta{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:25;background:var(--deep);padding:10px 16px calc(10px + env(safe-area-inset-bottom));gap:10px;border-top:1px solid #ffffff22}.mobile-cta .button{flex:1;min-height:46px;padding:11px 18px;justify-content:center;font-size:.75rem}.mobile-cta .outline{flex:.7}}
-@media(max-width:500px){.preview-bar{font-size:.57rem}.hero-inner{padding:65px 0 77px}.hero h1{font-size:3.4rem;line-height:1.01}.hero-copy{margin:25px 0;max-width:325px}.hero-actions{gap:10px}.hero-actions .button{font-size:.72rem;padding:14px 17px;gap:17px}.hero-meta{margin-top:30px;gap:12px;flex-wrap:wrap}.hero-meta span+span{padding-left:12px}.eyebrow{font-size:.6rem;letter-spacing:.14em;margin-bottom:20px}.section{padding:60px 0}.service-photo{min-height:340px}.service-item{grid-template-columns:25px 1fr 18px;gap:12px}.service-item h3{font-size:1.3rem}.image-grid{grid-template-columns:1fr}.image-card img{height:340px}.image-card .caption strong{font-size:1.6rem}.principles{grid-template-columns:1fr;gap:24px}.process-grid{grid-template-columns:1fr;gap:28px;margin-top:35px}.step-number{margin-bottom:16px}.step h3{font-size:1.6rem}.step p{max-width:none;font-size:.85rem}.faq{padding-top:0}.form-grid{grid-template-columns:1fr;gap:18px}.field.full{grid-column:auto}.contact h2{font-size:3.2rem}.dialog-body{padding:22px}.dialog-actions{flex-direction:column}.footer-links{gap:19px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+:root{
+  --ink:#202520;
+  --deep:#161a17;
+  --paper:#f4f1e9;
+  --white:#fffdf7;
+  --copper:#cf936b;
+  --copper-dark:#865031;
+  --muted:#686c63;
+  --line:#d7d8ce;
+  --max:1240px;
+}
+
+*{box-sizing:border-box}
+
+html{
+  scroll-behavior:smooth;
+  scroll-padding-top:110px;
+}
+
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.6;
+}
+
+button,input,select,textarea{font:inherit}
+button,a,input,textarea,select{-webkit-tap-highlight-color:transparent}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer}
+img{max-width:100%;display:block}
+h1,h2,h3,p,figure{margin:0}
+
+h1,h2,h3{
+  font-weight:600;
+  line-height:1.03;
+  letter-spacing:-.045em;
+}
+
+h2{font-size:clamp(2.3rem,4.8vw,4.5rem)}
+h3{font-size:1.4rem}
+
+::selection{
+  background:var(--copper);
+  color:var(--deep);
+}
+
+:focus-visible{
+  outline:3px solid var(--copper);
+  outline-offset:5px;
+}
+
+[hidden]{display:none!important}
+
+.wrap{
+  width:min(var(--max),calc(100% - 96px));
+  margin:auto;
+}
+
+.section{padding:108px 0}
+
+.eyebrow{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-size:.68rem;
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  margin-bottom:24px;
+}
+
+.eyebrow:before{
+  content:"";
+  display:block;
+  width:26px;
+  height:2px;
+  background:var(--copper);
+}
+
+.lead{
+  font-size:1.08rem;
+  color:var(--muted);
+  line-height:1.8;
+}
+
+.button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:26px;
+  min-height:54px;
+  padding:15px 24px;
+  border:1px solid transparent;
+  background:var(--copper);
+  color:var(--deep);
+  font-size:.8rem;
+  font-weight:700;
+  transition:background .2s,transform .2s;
+}
+
+.button:hover{
+  background:#dfa57e;
+  transform:translateY(-2px);
+}
+
+.button span[aria-hidden]{
+  font-size:1.25rem;
+  line-height:1;
+}
+
+.button.dark{
+  background:var(--ink);
+  color:var(--white);
+}
+
+.button.dark:hover{background:#364136}
+
+.button.outline{
+  background:transparent;
+  border-color:#ffffff55;
+  color:var(--white);
+}
+
+.button.outline:hover{background:#ffffff13}
+
+.text-link{
+  display:inline-flex;
+  align-items:center;
+  gap:28px;
+  font-size:.8rem;
+  font-weight:700;
+  padding:10px 0;
+  border-bottom:1px solid currentColor;
+}
+
+.skip{
+  position:fixed;
+  top:8px;
+  left:8px;
+  transform:translateY(-160%);
+  z-index:100;
+  background:white;
+  color:black;
+  padding:10px;
+}
+
+.skip:focus{transform:none}
+
+.preview-bar{
+  background:var(--copper);
+  color:var(--deep);
+  font-size:.66rem;
+  letter-spacing:.06em;
+  text-align:center;
+  padding:6px 16px;
+}
+
+.site-header{
+  background:var(--ink);
+  color:var(--white);
+  position:sticky;
+  top:0;
+  z-index:20;
+  border-bottom:1px solid #ffffff16;
+}
+
+.nav-row{
+  min-height:94px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:32px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:13px;
+  flex-shrink:0;
+}
+
+.brand img{
+  width:82px;
+  height:62px;
+  object-fit:contain;
+  filter:invert(1);
+}
+
+.brand-name{
+  display:block;
+  line-height:1.1;
+  font-size:1.12rem;
+  letter-spacing:.06em;
+  font-weight:800;
+}
+
+.brand-name small{
+  display:block;
+  font-size:.57rem;
+  letter-spacing:.26em;
+  margin-top:7px;
+  font-weight:400;
+}
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:28px;
+  font-size:.73rem;
+}
+
+.nav-links>a:not(.button){
+  padding:12px 0;
+  color:#d9ddd4;
+}
+
+.nav-links>a:hover{color:white}
+
+.nav-links .button{
+  min-height:44px;
+  padding:11px 19px;
+  font-size:.71rem;
+}
+
+.phone-link{
+  font-size:.78rem;
+  white-space:nowrap;
+}
+
+.menu-button{
+  display:none;
+  border:1px solid #ffffff4f;
+  background:none;
+  color:white;
+  min-width:48px;
+  min-height:44px;
+  padding:10px;
+  font-size:.72rem;
+}
+
+.mobile-nav{
+  padding:8px 24px 24px;
+  border-top:1px solid #ffffff20;
+}
+
+.mobile-nav a{
+  display:block;
+  padding:12px 0;
+}
+
+.hero{
+  position:relative;
+  min-height:690px;
+  background:var(--deep);
+  color:var(--white);
+  isolation:isolate;
+  overflow:hidden;
+}
+
+.hero-image{
+  position:absolute;
+  z-index:-3;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 48%;
+}
+
+.hero:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-2;
+  background:linear-gradient(
+    90deg,
+    rgba(15,21,17,.97) 0%,
+    rgba(15,21,17,.86) 30%,
+    rgba(15,21,17,.28) 72%,
+    rgba(15,21,17,.1) 100%
+  );
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  background:linear-gradient(0deg,#141a17a8,transparent 40%);
+}
+
+.hero-inner{
+  padding:91px 0 102px;
+  position:relative;
+}
+
+.hero .eyebrow{color:#e4d4c2}
+
+.hero h1{
+  font-size:clamp(3.3rem,6.4vw,6.05rem);
+  max-width:800px;
+  line-height:.98;
+  letter-spacing:-.055em;
+}
+
+.hero h1 em{
+  font-style:normal;
+  color:#dba37c;
+}
+
+.hero-copy{
+  max-width:440px;
+  color:#d1d5cb;
+  margin:28px 0 33px;
+  font-size:1rem;
+  line-height:1.85;
+}
+
+.hero-actions{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.hero-meta{
+  display:flex;
+  gap:25px;
+  margin-top:40px;
+  font-size:.66rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:#c9cfc4;
+}
+
+.hero-meta span+span{
+  border-left:1px solid #ffffff36;
+  padding-left:25px;
+}
+
+.photo-tag{
+  position:absolute;
+  right:30px;
+  bottom:23px;
+  color:#fff;
+  font-size:.57rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  text-shadow:0 1px 5px #000;
+  background:#18211980;
+  padding:5px 9px;
+}
+
+.hero-side{
+  position:absolute;
+  right:0;
+  bottom:102px;
+  width:225px;
+  border-top:1px solid #ffffff60;
+  padding-top:17px;
+  font-size:.8rem;
+  color:#e0e4d9;
+}
+
+.hero-side strong{
+  display:block;
+  font-size:.58rem;
+  letter-spacing:.15em;
+  margin-bottom:9px;
+  color:var(--copper);
+}
+
+.service-strip{
+  background:var(--ink);
+  color:#e9ebe2;
+  border-top:1px solid #ffffff20;
+}
+
+.strip-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  padding:23px 0;
+  font-size:.7rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+.strip-inner span{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.strip-inner span:before{
+  content:"+";
+  font-size:1rem;
+  color:var(--copper);
+}
+
+.section-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:48px;
+  margin-bottom:48px;
+}
+
+.section-top .lead{
+  max-width:340px;
+  font-size:.92rem;
+}
+
+.services-grid{
+  display:grid;
+  grid-template-columns:1.05fr 1fr;
+  gap:58px;
+  align-items:stretch;
+}
+
+.service-photo{
+  position:relative;
+  min-height:535px;
+  background:#d5d2c8;
+  overflow:hidden;
+}
+
+.service-photo>img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  position:absolute;
+  object-position:57% center;
+}
+
+.service-photo-caption{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:64px 28px 25px;
+  background:linear-gradient(transparent,#0d1713dd);
+  color:white;
+}
+
+.service-photo-caption strong{
+  font-size:1.8rem;
+  letter-spacing:-.04em;
+  font-weight:500;
+  display:block;
+}
+
+.service-photo-caption span{
+  font-size:.61rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:#e3d5c8;
+}
+
+.service-list{border-top:1px solid var(--line)}
+
+.service-item{
+  padding:26px 0;
+  border-bottom:1px solid var(--line);
+  display:grid;
+  grid-template-columns:36px 1fr 24px;
+  gap:15px;
+  transition:padding .2s;
+}
+
+.service-item:hover{padding-left:9px}
+
+.service-item>.number{
+  font-size:.62rem;
+  letter-spacing:.06em;
+  color:var(--copper-dark);
+  padding-top:7px;
+}
+
+.service-item h3{
+  font-size:1.45rem;
+  margin-bottom:10px;
+}
+
+.service-item p{
+  font-size:.84rem;
+  color:var(--muted);
+  max-width:350px;
+}
+
+.service-item>.arrow{
+  padding-top:1px;
+  font-size:1.2rem;
+}
+
+.service-bottom{
+  padding-top:24px;
+  font-size:.8rem;
+  color:var(--muted);
+}
+
+.service-bottom a{
+  color:var(--ink);
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+
+.approach{
+  background:#e7e8de;
+  border-top:1px solid #daddd1;
+  border-bottom:1px solid #daddd1;
+}
+
+.approach-grid{
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:90px;
+  align-items:center;
+}
+
+.approach h2{font-size:clamp(2.5rem,4vw,3.8rem)}
+
+.approach-copy>p{
+  font-size:1.05rem;
+  line-height:1.85;
+  color:#4c564a;
+  max-width:590px;
+}
+
+.principles{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:32px;
+  margin-top:34px;
+  padding-top:29px;
+  border-top:1px solid #c3c8bb;
+}
+
+.principles h3{
+  font-size:.92rem;
+  letter-spacing:-.02em;
+  margin-bottom:9px;
+}
+
+.principles p{
+  font-size:.79rem;
+  color:#5f695c;
+}
+
+.round-mark{
+  width:95px;
+  margin-top:35px;
+  opacity:.85;
+}
+
+.round-mark img{
+  width:100%;
+  height:auto;
+}
+
+.inspiration{
+  background:var(--deep);
+  color:var(--white);
+}
+
+.inspiration .lead{color:#b4bcb0}
+
+.image-grid{
+  display:grid;
+  grid-template-columns:1.55fr 1fr;
+  gap:22px;
+}
+
+.image-card{
+  position:relative;
+  display:block;
+  width:100%;
+  padding:0;
+  background:#303b30;
+  border:0;
+  color:white;
+  text-align:left;
+  overflow:hidden;
+}
+
+.image-card img{
+  width:100%;
+  height:420px;
+  object-fit:cover;
+  transition:transform .6s;
+}
+
+.image-card:hover img{transform:scale(1.035)}
+
+.image-card:after{
+  content:"";
+  position:absolute;
+  inset:40% 0 0;
+  background:linear-gradient(transparent,#101910df);
+  pointer-events:none;
+}
+
+.image-card .caption{
+  position:absolute;
+  bottom:27px;
+  left:28px;
+  right:28px;
+  z-index:2;
+}
+
+.image-card .caption small{
+  font-size:.58rem;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  color:#ded3c4;
+}
+
+.image-card .caption strong{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  font-size:1.6rem;
+  font-weight:500;
+  letter-spacing:-.03em;
+  margin-top:5px;
+}
+
+.image-card .caption strong span{
+  font-size:1.5rem;
+  font-weight:400;
+}
+
+.image-note{
+  margin-top:18px;
+  font-size:.7rem;
+  color:#adb7a7;
+}
+
+.image-note a{
+  text-decoration:underline;
+  text-underline-offset:3px;
+}
+
+.process-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:48px;
+  margin-top:50px;
+}
+
+.step{
+  padding-top:24px;
+  border-top:1px solid #bec3b4;
+}
+
+.step-number{
+  display:inline-block;
+  color:var(--copper-dark);
+  font-size:.67rem;
+  margin-bottom:35px;
+}
+
+.step h3{
+  font-size:1.65rem;
+  margin-bottom:15px;
+}
+
+.step p{
+  font-size:.86rem;
+  color:var(--muted);
+  max-width:310px;
+}
+
+.faq{padding-top:0}
+
+.faq-grid{
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:80px;
+  border-top:1px solid var(--line);
+  padding-top:72px;
+}
+
+.faq h2{font-size:clamp(2.3rem,4vw,3.5rem)}
+details{border-bottom:1px solid var(--line)}
+
+summary{
+  position:relative;
+  list-style:none;
+  cursor:pointer;
+  padding:23px 40px 23px 0;
+  font-size:.88rem;
+  font-weight:700;
+}
+
+summary::-webkit-details-marker{display:none}
+
+summary:after{
+  content:"+";
+  position:absolute;
+  right:0;
+  top:19px;
+  font-size:1.35rem;
+  font-weight:400;
+  color:var(--copper-dark);
+}
+
+details[open] summary:after{content:"−"}
+
+details p{
+  font-size:.84rem;
+  line-height:1.8;
+  color:var(--muted);
+  padding:0 30px 24px 0;
+}
+
+.contact{
+  background:var(--ink);
+  color:var(--white);
+  position:relative;
+  overflow:hidden;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:90px;
+  position:relative;
+}
+
+.contact h2{font-size:clamp(3rem,4.9vw,4.6rem)}
+
+.contact h2 em{
+  color:var(--copper);
+  font-style:normal;
+}
+
+.contact .lead{
+  color:#bcc4b6;
+  margin-top:27px;
+  font-size:.95rem;
+  max-width:380px;
+}
+
+.contact-methods{
+  margin-top:35px;
+  display:flex;
+  flex-direction:column;
+  align-items:start;
+  gap:10px;
+}
+
+.contact-methods a{
+  font-size:1.1rem;
+  border-bottom:1px solid #ffffff40;
+  overflow-wrap:anywhere;
+  max-width:100%;
+}
+
+.contact-area{
+  font-size:.78rem;
+  color:#bac2b3;
+  margin-top:24px;
+}
+
+.contact-area strong{
+  display:block;
+  font-size:.6rem;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  color:var(--copper);
+  margin-bottom:5px;
+}
+
+.contact-mark{
+  width:140px;
+  height:95px;
+  object-fit:contain;
+  filter:invert(1);
+  margin-top:35px;
+  opacity:.24;
+}
+
+.form-intro{
+  font-size:1.35rem;
+  font-weight:500;
+  letter-spacing:-.03em;
+  margin-bottom:8px;
+}
+
+.form-note{
+  font-size:.73rem;
+  line-height:1.7;
+  color:#b9c3b3;
+  margin-bottom:24px;
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.field{min-width:0}
+.field.full{grid-column:1/-1}
+
+label{
+  display:block;
+  font-size:.69rem;
+  color:#d7decf;
+  margin-bottom:8px;
+}
+
+input,select,textarea{
+  width:100%;
+  border:1px solid #586353;
+  background:#293027;
+  color:var(--white);
+  border-radius:0;
+  padding:13px 14px;
+  font-size:16px;
+  min-height:50px;
+}
+
+input::placeholder,textarea::placeholder{
+  color:#9fa997;
+  font-size:.8rem;
+}
+
+textarea{
+  resize:vertical;
+  min-height:115px;
+}
+
+select option{
+  color:var(--white);
+  background:var(--ink);
+}
+
+form .button{
+  width:100%;
+  margin-top:20px;
+}
+
+.privacy{
+  font-size:.66rem;
+  color:#b4bfac;
+  line-height:1.7;
+  margin-top:14px;
+}
+
+.site-footer{
+  background:var(--deep);
+  color:#a3ad9a;
+  padding:35px 0 85px;
+  font-size:.67rem;
+}
+
+.footer-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:24px;
+}
+
+.footer-links{
+  display:flex;
+  gap:24px;
+}
+
+.footer-links a:hover{color:white}
+
+.footer-detail{
+  margin-top:22px;
+  padding-top:18px;
+  border-top:1px solid #ffffff16;
+  font-size:.65rem;
+  max-width:830px;
+}
+
+.footer-detail summary{
+  padding:8px 30px 8px 0;
+  font-size:.66rem;
+  color:#b7c1ad;
+}
+
+.footer-detail summary:after{top:1px}
+
+.footer-detail p{
+  font-size:.68rem;
+  color:#adb7a7;
+  padding:8px 0 12px;
+}
+
+.footer-detail a{text-decoration:underline}
+.footer-detail details{border:0}
+.mobile-cta{display:none}
+
+dialog{
+  border:0;
+  padding:0;
+  background:var(--paper);
+  color:var(--ink);
+  width:min(650px,calc(100% - 32px));
+  max-height:90dvh;
+  box-shadow:0 20px 100px #0006;
+}
+
+dialog::backdrop{background:#10160edb}
+.dialog-body{padding:32px}
+
+.dialog-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  margin-bottom:20px;
+}
+
+.dialog-head h2{font-size:1.9rem}
+
+.close-button{
+  border:1px solid #b8bcaf;
+  background:transparent;
+  color:var(--ink);
+  width:44px;
+  height:44px;
+  font-size:1.6rem;
+  flex-shrink:0;
+}
+
+.dialog-body p{
+  font-size:.85rem;
+  color:var(--muted);
+  margin-bottom:17px;
+}
+
+.dialog-body textarea{
+  background:white;
+  color:var(--ink);
+  height:240px;
+  font-size:.85rem;
+  line-height:1.65;
+  border:1px solid #bbc0b3;
+}
+
+.dialog-actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:18px;
+}
+
+.dialog-actions .button{font-size:.75rem}
+
+.dialog-status{
+  min-height:1.5em;
+  font-size:.75rem;
+  margin-top:13px;
+  color:var(--copper-dark);
+}
+
+.lightbox{
+  width:min(1100px,calc(100% - 32px));
+  background:var(--deep);
+  color:white;
+}
+
+.lightbox .dialog-head{
+  padding:16px 20px;
+  margin:0;
+}
+
+.lightbox .dialog-head h2{
+  font-size:1rem;
+  letter-spacing:0;
+}
+
+.lightbox .close-button{
+  color:white;
+  border-color:#ffffff66;
+}
+
+.lightbox img{
+  width:100%;
+  max-height:70dvh;
+  object-fit:contain;
+}
+
+.lightbox figcaption{
+  font-size:.7rem;
+  padding:15px 20px;
+  color:#c8cebf;
+}
+
+@media(min-width:1500px){
+  .hero{min-height:760px}
+  .hero-inner{padding:115px 0}
+  .hero-side{bottom:115px}
+}
+
+@media(max-width:1100px){
+  .wrap{width:calc(100% - 60px)}
+  .nav-links{gap:20px}
+  .nav-links .phone-link{display:none}
+  .brand-name{font-size:1rem}
+  .nav-row{gap:24px}
+  .hero-side{display:none}
+  .services-grid{gap:32px}
+  .approach-grid,.contact-grid{gap:48px}
+  .image-card img{height:370px}
+}
+
+@media(max-width:800px){
+  html{scroll-padding-top:90px}
+  .wrap{width:calc(100% - 40px)}
+  .section{padding:72px 0}
+  .nav-row{min-height:78px}
+  .brand img{width:65px;height:51px}
+  .brand-name{font-size:.89rem}
+  .brand-name small{font-size:.49rem}
+  .nav-links{display:none}
+  .menu-button{display:block}
+  .hero{min-height:auto}
+  .hero-inner{padding:78px 0 87px}
+  .hero h1{
+    font-size:clamp(3.3rem,8.7vw,5rem);
+    max-width:650px;
+  }
+  .hero-copy{font-size:.93rem;max-width:390px}
+  .hero:before{
+    background:linear-gradient(90deg,#101911ed,#1019118c);
+  }
+  .hero-image{object-position:61% center}
+  .hero-meta{font-size:.58rem;gap:14px}
+  .hero-meta span+span{padding-left:14px}
+  .photo-tag{right:20px;bottom:15px}
+  .strip-inner{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    padding:21px 0;
+    gap:13px;
+    font-size:.58rem;
+  }
+  .strip-inner span{gap:11px}
+  .section-top{
+    gap:25px;
+    align-items:start;
+    flex-direction:column;
+    margin-bottom:35px;
+  }
+  .section-top .lead{max-width:520px}
+  .services-grid{grid-template-columns:1fr}
+  .service-photo{min-height:390px;max-height:460px}
+  .service-photo>img{object-position:50% 40%}
+  .service-item{padding:24px 0}
+  .approach-grid{grid-template-columns:1fr;gap:35px}
+  .round-mark{display:none}
+  .principles{gap:25px}
+  .image-grid{grid-template-columns:1fr 1fr;gap:15px}
+  .image-card img{height:320px}
+  .image-card .caption{left:18px;right:18px;bottom:20px}
+  .image-card .caption strong{font-size:1.25rem;gap:10px}
+  .process-grid{gap:26px}
+  .step h3{font-size:1.35rem}
+  .step p{font-size:.8rem}
+  .faq{padding-top:0}
+  .faq-grid{
+    grid-template-columns:1fr;
+    gap:26px;
+    padding-top:50px;
+  }
+  .contact-grid{grid-template-columns:1fr;gap:45px}
+  .contact h2{font-size:3.6rem}
+  .contact-mark{display:none}
+  .contact .lead{max-width:490px}
+  .footer-row{
+    align-items:start;
+    flex-direction:column;
+    gap:17px;
+  }
+  .site-footer{padding-bottom:105px}
+  .mobile-cta{
+    display:flex;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:25;
+    background:var(--deep);
+    padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+    gap:10px;
+    border-top:1px solid #ffffff22;
+  }
+  .mobile-cta .button{
+    flex:1;
+    min-height:46px;
+    padding:11px 18px;
+    justify-content:center;
+    font-size:.75rem;
+  }
+  .mobile-cta .outline{flex:.7}
+}
+
+@media(max-width:500px){
+  .preview-bar{font-size:.57rem}
+  .hero-inner{padding:65px 0 77px}
+  .hero h1{font-size:3.4rem;line-height:1.01}
+  .hero-copy{margin:25px 0;max-width:325px}
+  .hero-actions{gap:10px}
+  .hero-actions .button{
+    font-size:.72rem;
+    padding:14px 17px;
+    gap:17px;
+  }
+  .hero-meta{
+    margin-top:30px;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+  .hero-meta span+span{padding-left:12px}
+  .eyebrow{
+    font-size:.6rem;
+    letter-spacing:.14em;
+    margin-bottom:20px;
+  }
+  .section{padding:60px 0}
+  .service-photo{min-height:340px}
+  .service-item{
+    grid-template-columns:25px 1fr 18px;
+    gap:12px;
+  }
+  .service-item h3{font-size:1.3rem}
+  .image-grid{grid-template-columns:1fr}
+  .image-card img{height:340px}
+  .image-card .caption strong{font-size:1.6rem}
+  .principles{grid-template-columns:1fr;gap:24px}
+  .process-grid{
+    grid-template-columns:1fr;
+    gap:28px;
+    margin-top:35px;
+  }
+  .step-number{margin-bottom:16px}
+    .step h3{font-size:1.6rem}
+  .step p{max-width:none;font-size:.85rem}
+  .faq{padding-top:0}
+  .form-grid{grid-template-columns:1fr;gap:18px}
+  .field.full{grid-column:auto}
+  .contact h2{font-size:3.2rem}
+  .dialog-body{padding:22px}
+  .dialog-actions{flex-direction:column}
+  .footer-links{gap:19px}
+}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{
+    transition:none!important;
+    animation:none!important;
+  }
+}
 </style>
 </head>
+
 <body>
+
 <a class="skip" href="#main">Skip to content</a>
-<div class="preview-bar" id="preview-banner">WEBSITE PREVIEW · BUSINESS DETAILS &amp; SERVICES TO BE CONFIRMED</div>
+
+<div class="preview-bar" id="preview-banner">
+  WEBSITE PREVIEW · BUSINESS DETAILS &amp; SERVICES TO BE CONFIRMED
+</div>
+
 <header class="site-header">
   <div class="wrap nav-row">
-    <a class="brand" href="#main" aria-label="Davidson Contracting home"><img src="1000008222.png" width="82" height="62" alt="DC house logo"><span class="brand-name">DAVIDSON<small>CONTRACTING</small></span></a>
-    <nav class="nav-links" aria-label="Main navigation"><a href="#services">What we do</a><a href="#approach">Our approach</a><a href="#inspiration">Inspiration</a><a class="phone-link" data-phone hidden></a><a class="button" href="#contact">Discuss your project <span aria-hidden="true">↗</span></a></nav>
-    <button class="menu-button" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">Menu +</button>
+
+    <a class="brand" href="#main" aria-label="Davidson Contracting home">
+      <img
+        src="1000008222.png"
+        width="82"
+        height="62"
+        alt="DC house logo"
+      >
+      <span class="brand-name">
+        DAVIDSON
+        <small>CONTRACTING</small>
+      </span>
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#services">What we do</a>
+      <a href="#approach">Our approach</a>
+      <a href="#inspiration">Inspiration</a>
+      <a class="phone-link" data-phone hidden></a>
+      <a class="button" href="#contact">
+        Discuss your project
+        <span aria-hidden="true">↗</span>
+      </a>
+    </nav>
+
+    <button
+      class="menu-button"
+      id="menu-toggle"
+      aria-expanded="false"
+      aria-controls="mobile-nav"
+    >
+      Menu +
+    </button>
+
   </div>
-  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#services">What we do</a><a href="#approach">Our approach</a><a href="#inspiration">Project inspiration</a><a href="#contact">Discuss your project</a><a data-phone hidden></a></nav>
+
+  <nav
+    id="mobile-nav"
+    class="mobile-nav"
+    aria-label="Mobile navigation"
+    hidden
+  >
+    <a href="#services">What we do</a>
+    <a href="#approach">Our approach</a>
+    <a href="#inspiration">Project inspiration</a>
+    <a href="#contact">Discuss your project</a>
+    <a data-phone hidden></a>
+  </nav>
 </header>
+
 <main id="main">
+
   <section class="hero" aria-labelledby="hero-title">
-    <img class="hero-image" src="https://images.pexels.com/photos/8830259/pexels-photo-8830259.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1800" alt="Sunlight falling across timber wall and roof framing" width="1800" height="1200" fetchpriority="high">
-    <div class="wrap hero-inner"><div class="eyebrow">Davidson Contracting · Carpentry</div><h1 id="hero-title">Built with purpose.<br>Finished with<br><em>pride.</em></h1><p class="hero-copy">Good timber. Thoughtful details. Spaces made for living. Bring your next carpentry project to Davidson Contracting.</p><div class="hero-actions"><a href="#contact" class="button">Let’s talk about your project <span aria-hidden="true">↗</span></a><a href="#services" class="button outline">Explore services <span aria-hidden="true">↓</span></a></div><div class="hero-meta"><span>Carpentry</span><span>Timber work</span><span>Home improvements</span></div><div class="hero-side"><strong>FROM THE FRAME TO THE FINISH</strong>It’s the work behind the details that makes a space feel right.</div></div>
-    <span class="photo-tag">Stock photography · project inspiration</span>
+
+    <img
+      class="hero-image"
+      src="https://images.pexels.com/photos/8830259/pexels-photo-8830259.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1800"
+      alt="Sunlight falling across timber wall and roof framing"
+      width="1800"
+      height="1200"
+      fetchpriority="high"
+    >
+
+    <div class="wrap hero-inner">
+
+      <div class="eyebrow">
+        Davidson Contracting · Carpentry
+      </div>
+
+      <h1 id="hero-title">
+        Built with purpose.<br>
+        Finished with<br>
+        <em>pride.</em>
+      </h1>
+
+      <p class="hero-copy">
+        Good timber. Thoughtful details. Spaces made for living.
+        Bring your next carpentry project to Davidson Contracting.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="button">
+          Let’s talk about your project
+          <span aria-hidden="true">↗</span>
+        </a>
+        <a href="#services" class="button outline">
+          Explore services
+          <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+
+      <div class="hero-meta">
+        <span>Carpentry</span>
+        <span>Timber work</span>
+        <span>Home improvements</span>
+      </div>
+
+      <div class="hero-side">
+        <strong>FROM THE FRAME TO THE FINISH</strong>
+        It’s the work behind the details that makes a space feel right.
+      </div>
+
+    </div>
+
+    <span class="photo-tag">
+      Stock photography · project inspiration
+    </span>
+
   </section>
-  <div class="service-strip"><div class="wrap strip-inner"><span>Decks &amp; outdoor living</span><span>Framing &amp; timber work</span><span>Fit-outs &amp; finishing</span><span>Repairs &amp; improvements</span></div></div>
-  <section class="section" id="services" aria-labelledby="services-title">
-    <div class="wrap"><div class="section-top"><div><div class="eyebrow">What we do</div><h2 id="services-title">Make more of<br>your space.</h2></div><p class="lead">From the bones of a build to the finishing touches. Explore ideas for your home, then tell us what you have in mind.</p></div>
-    <div class="services-grid"><figure class="service-photo"><img src="https://images.pexels.com/photos/7480721/pexels-photo-7480721.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Carpenter measuring a piece of timber in a workshop; stock image" width="1000" height="667" loading="lazy"><figcaption class="service-photo-caption"><span>Care in the details · stock image</span><strong>Every good build<br>starts with the basics.</strong></figcaption></figure>
-    <div><div class="service-list">
-      <a class="service-item" href="#contact" data-service="Decks & outdoor living"><span class="number">01</span><div><h3>Decks &amp; outdoor living</h3><p>Timber decks, pergolas and outdoor features that turn spare space into somewhere you want to spend time.</p></div><span class="arrow" aria-hidden="true">↗</span></a>
-      <a class="service-item" href="#contact" data-service="Framing & timber work"><span class="number">02</span><div><h3>Framing &amp; timber work</h3><p>Discuss wall framing, timber structures and the carpentry work your next build or renovation needs.</p></div><span class="arrow" aria-hidden="true">↗</span></a>
-      <a class="service-item" href="#contact" data-service="Fit-outs & finishing"><span class="number">03</span><div><h3>Fit-outs &amp; finishing</h3><p>Doors, skirting, architraves and timber details to bring a room together.</p></div><span class="arrow" aria-hidden="true">↗</span></a>
-      <a class="service-item" href="#contact" data-service="Repairs & improvements"><span class="number">04</span><div><h3>Repairs &amp; improvements</h3><p>Bring new life to existing timber features, tackle wear and tear, or make a practical change around the home.</p></div><span class="arrow" aria-hidden="true">↗</span></a>
-    </div><p class="service-bottom">Something else in mind? <a href="#contact">Tell us about it.</a></p></div></div></div>
+
+  <div class="service-strip">
+    <div class="wrap strip-inner">
+      <span>Decks &amp; outdoor living</span>
+      <span>Framing &amp; timber work</span>
+      <span>Fit-outs &amp; finishing</span>
+      <span>Repairs &amp; improvements</span>
+    </div>
+  </div>
+
+  <section
+    class="section"
+    id="services"
+    aria-labelledby="services-title"
+  >
+    <div class="wrap">
+
+      <div class="section-top">
+        <div>
+          <div class="eyebrow">What we do</div>
+          <h2 id="services-title">
+            Make more of<br>your space.
+          </h2>
+        </div>
+
+        <p class="lead">
+          From the bones of a build to the finishing touches.
+          Explore ideas for your home, then tell us what you have in mind.
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <figure class="service-photo">
+          <img
+            src="https://images.pexels.com/photos/7480721/pexels-photo-7480721.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000"
+            alt="Carpenter measuring a piece of timber in a workshop; stock image"
+            width="1000"
+            height="667"
+            loading="lazy"
+          >
+
+          <figcaption class="service-photo-caption">
+            <span>Care in the details · stock image</span>
+            <strong>
+              Every good build<br>starts with the basics.
+            </strong>
+          </figcaption>
+        </figure>
+
+        <div>
+          <div class="service-list">
+
+            <a
+              class="service-item"
+              href="#contact"
+              data-service="Decks & outdoor living"
+            >
+              <span class="number">01</span>
+              <div>
+                <h3>Decks &amp; outdoor living</h3>
+                <p>
+                  Timber decks, pergolas and outdoor features that turn
+                  spare space into somewhere you want to spend time.
+                </p>
+              </div>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="service-item"
+              href="#contact"
+              data-service="Framing & timber work"
+            >
+              <span class="number">02</span>
+              <div>
+                <h3>Framing &amp; timber work</h3>
+                <p>
+                  Discuss wall framing, timber structures and the
+                  carpentry work your next build or renovation needs.
+                </p>
+              </div>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="service-item"
+              href="#contact"
+              data-service="Fit-outs & finishing"
+            >
+              <span class="number">03</span>
+              <div>
+                <h3>Fit-outs &amp; finishing</h3>
+                <p>
+                  Doors, skirting, architraves and timber details
+                  to bring a room together.
+                </p>
+              </div>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="service-item"
+              href="#contact"
+              data-service="Repairs & improvements"
+            >
+              <span class="number">04</span>
+              <div>
+                <h3>Repairs &amp; improvements</h3>
+                <p>
+                  Bring new life to existing timber features, tackle
+                  wear and tear, or make a practical change around
+                  the home.
+                </p>
+              </div>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+
+          </div>
+
+          <p class="service-bottom">
+            Something else in mind?
+            <a href="#contact">Tell us about it.</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
   </section>
-  <section class="section approach" id="approach" aria-labelledby="approach-title"><div class="wrap approach-grid"><div><div class="eyebrow">The Davidson approach</div><h2 id="approach-title">Good work starts<br>with a good<br>conversation.</h2><div class="round-mark"><img src="1000008222.png" alt="" width="95" height="63" loading="lazy"></div></div><div class="approach-copy"><p>A better space starts with understanding how you use it. What needs to change? What needs to stay? And what will make the biggest difference to everyday life?</p><p style="margin-top:18px">Let’s work through the practical details: your ideas, the right materials and a clear scope for the job.</p><div class="principles"><div><h3>Think it through.</h3><p>Consider the space, the finish and how the timber will be used before settling on the details.</p></div><div><h3>Get the scope right.</h3><p>Agree on what’s included, what needs checking and the next steps before work begins.</p></div></div></div></div></section>
-  <section class="section inspiration" id="inspiration" aria-labelledby="inspiration-title"><div class="wrap"><div class="section-top"><div><div class="eyebrow">Materials. Details. Possibilities.</div><h2 id="inspiration-title">A little inspiration<br>for what’s next.</h2></div><p class="lead">Natural timber brings warmth, texture and character. Start with a feeling. Build from there.</p></div><div class="image-grid">
-    <button class="image-card" type="button" data-photo="outdoor" aria-label="View outdoor living inspiration image"><img src="https://images.pexels.com/photos/12445995/pexels-photo-12445995.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200" alt="Timber-clad home opening onto a garden deck" width="1200" height="746" loading="lazy"><span class="caption"><small>Outdoor living</small><strong>Room to unwind. <span aria-hidden="true">↗</span></strong></span></button>
-    <button class="image-card" type="button" data-photo="detail" aria-label="View timber craftsmanship inspiration image"><img src="https://images.pexels.com/photos/5710747/pexels-photo-5710747.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000" alt="Craftsman working on timber details in a workshop" width="1000" height="667" loading="lazy"><span class="caption"><small>Timber &amp; craftsmanship</small><strong>Made in the details. <span aria-hidden="true">↗</span></strong></span></button>
-  </div><p class="image-note">All photographs are stock images for inspiration, not completed Davidson Contracting projects. <a href="#photo-credits">Photo credits</a></p></div></section>
-  <section class="section" id="process" aria-labelledby="process-title"><div class="wrap"><div class="section-top"><div><div class="eyebrow">Your next step</div><h2 id="process-title">From an idea<br>to a clear plan.</h2></div><p class="lead">You don’t need every detail figured out to start a conversation.</p></div><div class="process-grid"><article class="step"><span class="step-number">01 / SHARE YOUR IDEA</span><h3>Tell us the vision.</h3><p>A new outdoor space, a repair or the last details of a renovation. Share what you want to achieve and where the job is.</p></article><article class="step"><span class="step-number">02 / WORK THROUGH THE DETAILS</span><h3>Get the whole picture.</h3><p>Photos, measurements and a discussion about materials help clarify the scope. A site visit may be needed before pricing.</p></article><article class="step"><span class="step-number">03 / AGREE ON WHAT’S NEXT</span><h3>Make a practical plan.</h3><p>Confirm the work, inclusions, price and timing before going ahead. Any required approvals should be checked first.</p></article></div></div></section>
-  <section class="section faq" aria-labelledby="faq-title"><div class="wrap faq-grid"><div><div class="eyebrow">Before you get in touch</div><h2 id="faq-title">A few useful<br>answers.</h2></div><div><details><summary>What should I include in my enquiry?</summary><p>A short description of the job, your suburb, approximate dimensions and your preferred timing are a useful start. Photos of the existing space and examples of the finish you like can help too.</p></details><details><summary>Can I enquire about a smaller job?</summary><p>Yes, describe the repair or improvement you have in mind. The scope, location and current availability will need to be checked before a job can be confirmed.</p></details><details><summary>Do I need drawings before getting in touch?</summary><p>You can start with an idea or a few reference photos. Depending on the work, drawings, engineering or approvals may be needed before construction can begin.</p></details><details><summary>Which areas do you service?</summary><p data-area-answer>The service area is being confirmed for this website preview. Include your suburb in the enquiry so the location can be checked.</p></details><details><summary>Are these photos of your completed work?</summary><p>The photos on this website are stock images used to illustrate timber work and design ideas. They are not presented as Davidson Contracting projects or team members.</p></details></div></div></section>
-  <section class="section contact" id="contact" aria-labelledby="contact-title"><div class="wrap contact-grid"><div><div class="eyebrow">Let’s get started</div><h2 id="contact-title">Got a project<br>in mind?<br><em>Let’s talk.</em></h2><p class="lead">Tell us what you’re planning. A few details now can make the next conversation much more useful.</p><div class="contact-methods"><a data-phone hidden></a><a data-email hidden></a></div><div class="contact-area"><strong>Service area</strong><span data-service-area>To be confirmed</span></div><img class="contact-mark" src="1000008222.png" alt="" width="140" height="95" loading="lazy"></div><div><h3 class="form-intro">Tell us about your project.</h3><p class="form-note" id="form-explainer">Preview mode: prepare a project brief to copy. Contact details have not been added, so nothing will be sent.</p><form id="enquiry-form"><div class="form-grid"><div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" placeholder="Full name" required maxlength="100"></div><div class="field"><label for="phone">Phone number *</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Your best contact number" required maxlength="40"></div><div class="field"><label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="160"></div><div class="field"><label for="suburb">Project suburb *</label><input id="suburb" name="suburb" autocomplete="address-level2" placeholder="Where is the job?" required maxlength="120"></div><div class="field full"><label for="service">What can we help with? *</label><select id="service" name="service" required><option value="">Choose a project type</option><option>Decks &amp; outdoor living</option><option>Framing &amp; timber work</option><option>Fit-outs &amp; finishing</option><option>Repairs &amp; improvements</option><option>Something else / not sure yet</option></select></div><div class="field full"><label for="details">A little about the project *</label><textarea id="details" name="details" placeholder="Tell us what you have in mind, approximate dimensions and your preferred timing…" required maxlength="1600"></textarea></div></div><button class="button" type="submit">Prepare my enquiry <span aria-hidden="true">↗</span></button><p class="privacy">Your details stay in this page until you choose to copy or email them. This form does not upload them or add you to a mailing list.</p><noscript><p>Please enable JavaScript to prepare an enquiry. This form cannot send messages without it.</p></noscript></form></div></div></section>
+
+  <section
+    class="section approach"
+    id="approach"
+    aria-labelledby="approach-title"
+  >
+    <div class="wrap approach-grid">
+
+      <div>
+        <div class="eyebrow">The Davidson approach</div>
+
+        <h2 id="approach-title">
+          Good work starts<br>
+          with a good<br>
+          conversation.
+        </h2>
+
+        <div class="round-mark">
+          <img
+            src="1000008222.png"
+            alt=""
+            width="95"
+            height="63"
+            loading="lazy"
+          >
+        </div>
+      </div>
+
+      <div class="approach-copy">
+        <p>
+          A better space starts with understanding how you use it.
+          What needs to change? What needs to stay? And what will
+          make the biggest difference to everyday life?
+        </p>
+
+        <p style="margin-top:18px">
+          Let’s work through the practical details: your ideas,
+          the right materials and a clear scope for the job.
+        </p>
+
+        <div class="principles">
+          <div>
+            <h3>Think it through.</h3>
+            <p>
+              Consider the space, the finish and how the timber
+              will be used before settling on the details.
+            </p>
+          </div>
+
+          <div>
+            <h3>Get the scope right.</h3>
+            <p>
+              Agree on what’s included, what needs checking
+              and the next steps before work begins.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section
+    class="section inspiration"
+    id="inspiration"
+    aria-labelledby="inspiration-title"
+  >
+    <div class="wrap">
+
+      <div class="section-top">
+        <div>
+          <div class="eyebrow">
+            Materials. Details. Possibilities.
+          </div>
+
+          <h2 id="inspiration-title">
+            A little inspiration<br>for what’s next.
+          </h2>
+        </div>
+
+        <p class="lead">
+          Natural timber brings warmth, texture and character.
+          Start with a feeling. Build from there.
+        </p>
+      </div>
+
+      <div class="image-grid">
+
+        <button
+          class="image-card"
+          type="button"
+          data-photo="outdoor"
+          aria-label="View outdoor living inspiration image"
+        >
+          <img
+            src="https://images.pexels.com/photos/12445995/pexels-photo-12445995.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200"
+            alt="Timber-clad home opening onto a garden deck"
+            width="1200"
+            height="746"
+            loading="lazy"
+          >
+
+          <span class="caption">
+            <small>Outdoor living</small>
+            <strong>
+              Room to unwind.
+              <span aria-hidden="true">↗</span>
+            </strong>
+          </span>
+        </button>
+
+        <button
+          class="image-card"
+          type="button"
+          data-photo="detail"
+          aria-label="View timber craftsmanship inspiration image"
+        >
+          <img
+            src="https://images.pexels.com/photos/5710747/pexels-photo-5710747.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000"
+            alt="Craftsman working on timber details in a workshop"
+            width="1000"
+            height="667"
+            loading="lazy"
+          >
+
+          <span class="caption">
+            <small>Timber &amp; craftsmanship</small>
+            <strong>
+              Made in the details.
+              <span aria-hidden="true">↗</span>
+            </strong>
+          </span>
+        </button>
+
+      </div>
+
+      <p class="image-note">
+        All photographs are stock images for inspiration, not
+        completed Davidson Contracting projects.
+        <a href="#photo-credits">Photo credits</a>
+      </p>
+
+    </div>
+  </section>
+
+  <section
+    class="section"
+    id="process"
+    aria-labelledby="process-title"
+  >
+    <div class="wrap">
+
+      <div class="section-top">
+        <div>
+          <div class="eyebrow">Your next step</div>
+
+          <h2 id="process-title">
+            From an idea<br>to a clear plan.
+          </h2>
+        </div>
+
+        <p class="lead">
+          You don’t need every detail figured out
+          to start a conversation.
+        </p>
+      </div>
+
+      <div class="process-grid">
+
+        <article class="step">
+          <span class="step-number">01 / SHARE YOUR IDEA</span>
+          <h3>Tell us the vision.</h3>
+          <p>
+            A new outdoor space, a repair or the last details
+            of a renovation. Share what you want to achieve
+            and where the job is.
+          </p>
+        </article>
+
+        <article class="step">
+          <span class="step-number">
+            02 / WORK THROUGH THE DETAILS
+          </span>
+          <h3>Get the whole picture.</h3>
+          <p>
+            Photos, measurements and a discussion about materials
+            help clarify the scope. A site visit may be needed
+            before pricing.
+          </p>
+        </article>
+
+        <article class="step">
+          <span class="step-number">
+            03 / AGREE ON WHAT’S NEXT
+          </span>
+          <h3>Make a practical plan.</h3>
+          <p>
+            Confirm the work, inclusions, price and timing
+            before going ahead. Any required approvals
+            should be checked first.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section faq" aria-labelledby="faq-title">
+    <div class="wrap faq-grid">
+
+      <div>
+        <div class="eyebrow">Before you get in touch</div>
+        <h2 id="faq-title">
+          A few useful<br>answers.
+        </h2>
+      </div>
+
+      <div>
+
+        <details>
+          <summary>What should I include in my enquiry?</summary>
+          <p>
+            A short description of the job, your suburb,
+            approximate dimensions and your preferred timing
+            are a useful start. Photos of the existing space
+            and examples of the finish you like can help too.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can I enquire about a smaller job?</summary>
+          <p>
+            Yes, describe the repair or improvement you have
+            in mind. The scope, location and current availability
+            will need to be checked before a job can be confirmed.
+          </p>
+        </details>
+
+        <details>
+          <summary>Do I need drawings before getting in touch?</summary>
+          <p>
+            You can start with an idea or a few reference photos.
+            Depending on the work, drawings, engineering or
+            approvals may be needed before construction can begin.
+          </p>
+        </details>
+
+        <details>
+          <summary>Which areas do you service?</summary>
+          <p data-area-answer>
+            The service area is being confirmed for this website
+            preview. Include your suburb in the enquiry so the
+            location can be checked.
+          </p>
+        </details>
+
+        <details>
+          <summary>Are these photos of your completed work?</summary>
+          <p>
+            The photos on this website are stock images used to
+            illustrate timber work and design ideas. They are not
+            presented as Davidson Contracting projects or team members.
+          </p>
+        </details>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section
+    class="section contact"
+    id="contact"
+    aria-labelledby="contact-title"
+  >
+    <div class="wrap contact-grid">
+
+      <div>
+        <div class="eyebrow">Let’s get started</div>
+
+        <h2 id="contact-title">
+          Got a project<br>
+          in mind?<br>
+          <em>Let’s talk.</em>
+        </h2>
+
+        <p class="lead">
+          Tell us what you’re planning. A few details now can
+          make the next conversation much more useful.
+        </p>
+
+        <div class="contact-methods">
+          <a data-phone hidden></a>
+          <a data-email hidden></a>
+        </div>
+
+        <div class="contact-area">
+          <strong>Service area</strong>
+          <span data-service-area>To be confirmed</span>
+        </div>
+
+        <img
+          class="contact-mark"
+          src="1000008222.png"
+          alt=""
+          width="140"
+          height="95"
+          loading="lazy"
+        >
+      </div>
+
+      <div>
+        <h3 class="form-intro">Tell us about your project.</h3>
+
+        <p class="form-note" id="form-explainer">
+          Preview mode: prepare a project brief to copy.
+          Contact details have not been added, so nothing will be sent.
+        </p>
+
+        <form id="enquiry-form">
+          <div class="form-grid">
+
+            <div class="field">
+              <label for="name">Your name *</label>
+              <input
+                id="name"
+                name="name"
+                autocomplete="name"
+                placeholder="Full name"
+                required
+                maxlength="100"
+              >
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone number *</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel"
+                placeholder="Your best contact number"
+                required
+                maxlength="40"
+              >
+            </div>
+
+            <div class="field">
+              <label for="email">Email address *</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="you@example.com"
+                required
+                maxlength="160"
+              >
+            </div>
+
+            <div class="field">
+              <label for="suburb">Project suburb *</label>
+              <input
+                id="suburb"
+                name="suburb"
+                autocomplete="address-level2"
+                placeholder="Where is the job?"
+                required
+                maxlength="120"
+              >
+            </div>
+
+            <div class="field full">
+              <label for="service">What can we help with? *</label>
+              <select id="service" name="service" required>
+                <option value="">Choose a project type</option>
+                <option>Decks &amp; outdoor living</option>
+                <option>Framing &amp; timber work</option>
+                <option>Fit-outs &amp; finishing</option>
+                <option>Repairs &amp; improvements</option>
+                <option>Something else / not sure yet</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <label for="details">A little about the project *</label>
+              <textarea
+                id="details"
+                name="details"
+                placeholder="Tell us what you have in mind, approximate dimensions and your preferred timing…"
+                required
+                maxlength="1600"
+              ></textarea>
+            </div>
+
+          </div>
+
+          <button class="button" type="submit">
+            Prepare my enquiry
+            <span aria-hidden="true">↗</span>
+          </button>
+
+          <p class="privacy">
+            Your details stay in this page until you choose to
+            copy or email them. This form does not upload them
+            or add you to a mailing list.
+          </p>
+
+          <noscript>
+            <p>
+              Please enable JavaScript to prepare an enquiry.
+              This form cannot send messages without it.
+            </p>
+          </noscript>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
 </main>
-<footer class="site-footer"><div class="wrap"><div class="footer-row"><p>© <span id="year">2026</span> Davidson Contracting</p><nav class="footer-links" aria-label="Footer navigation"><a href="#services">Services</a><a href="#contact">Get in touch</a><a href="#main">Back to top ↑</a></nav></div><div class="footer-detail" id="photo-credits"><details><summary>Photography &amp; preview information</summary><p>Stock photography from Pexels: <a href="https://www.pexels.com/photo/wooden-construction-of-a-house-8830259/" target="_blank" rel="noopener noreferrer">Timber framing</a> · <a href="https://www.pexels.com/photo/man-working-in-carpentry-7480721/" target="_blank" rel="noopener noreferrer">cottonbro studio — carpentry</a> · <a href="https://www.pexels.com/photo/wooden-house-with-a-backyard-12445995/" target="_blank" rel="noopener noreferrer">Robert So — outdoor living</a> · <a href="https://www.pexels.com/photo/focused-craftsman-working-with-wood-5710747/" target="_blank" rel="noopener noreferrer">Anna Shvets — timber details</a>. Images are illustrative, not a company portfolio.</p><p id="preview-detail">This is a design preview. The proposed services, service area and contact details need the business owner’s confirmation before launch.</p></details></div></div></footer>
-<div class="mobile-cta"><a class="button outline" data-call-button hidden>Call now</a><a class="button" href="#contact">Discuss your project <span aria-hidden="true">↗</span></a></div>
-<dialog id="enquiry-dialog" aria-labelledby="enquiry-title"><div class="dialog-body"><div class="dialog-head"><h2 id="enquiry-title">Your project brief.</h2><button class="close-button" data-close aria-label="Close enquiry preview">×</button></div><p id="brief-explainer">Your enquiry has not been sent. Copy the brief below to keep it ready while the company’s contact details are added.</p><label for="enquiry-output" style="color:var(--muted)">Review your details</label><textarea id="enquiry-output" readonly></textarea><div class="dialog-actions"><button class="button dark" id="copy-brief">Copy project brief <span aria-hidden="true">↗</span></button><a class="button" id="email-brief" hidden>Open email app <span aria-hidden="true">↗</span></a></div><div class="dialog-status" id="copy-status" role="status" aria-live="polite"></div></div></dialog>
-<dialog class="lightbox" id="photo-dialog" aria-labelledby="photo-title"><div class="dialog-head"><h2 id="photo-title">Project inspiration</h2><button class="close-button" data-close aria-label="Close image">×</button></div><figure><img id="expanded-photo" alt=""><figcaption id="photo-caption">Stock image for inspiration.</figcaption></figure></dialog>
+
+<footer class="site-footer">
+  <div class="wrap">
+
+    <div class="footer-row">
+      <p>
+        © <span id="year">2026</span> Davidson Contracting
+      </p>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#services">Services</a>
+        <a href="#contact">Get in touch</a>
+        <a href="#main">Back to top ↑</a>
+      </nav>
+    </div>
+
+    <div class="footer-detail" id="photo-credits">
+      <details>
+        <summary>Photography &amp; preview information</summary>
+
+        <p>
+          Stock photography from Pexels:
+          <a
+            href="https://www.pexels.com/photo/wooden-construction-of-a-house-8830259/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Timber framing</a>
+          ·
+          <a
+            href="https://www.pexels.com/photo/man-working-in-carpentry-7480721/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >cottonbro studio — carpentry</a>
+          ·
+                  <a
+            href="https://www.pexels.com/photo/wooden-house-with-a-backyard-12445995/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Robert So — outdoor living</a>
+          ·
+          <a
+            href="https://www.pexels.com/photo/focused-craftsman-working-with-wood-5710747/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Anna Shvets — timber details</a>.
+          Images are illustrative, not a company portfolio.
+        </p>
+
+        <p id="preview-detail">
+          This is a design preview. The proposed services,
+          service area and contact details need the business
+          owner’s confirmation before launch.
+        </p>
+
+      </details>
+    </div>
+
+  </div>
+</footer>
+
+<div class="mobile-cta">
+  <a class="button outline" data-call-button hidden>Call now</a>
+  <a class="button" href="#contact">
+    Discuss your project
+    <span aria-hidden="true">↗</span>
+  </a>
+</div>
+
+<dialog id="enquiry-dialog" aria-labelledby="enquiry-title">
+  <div class="dialog-body">
+
+    <div class="dialog-head">
+      <h2 id="enquiry-title">Your project brief.</h2>
+      <button
+        class="close-button"
+        data-close
+        aria-label="Close enquiry preview"
+      >×</button>
+    </div>
+
+    <p id="brief-explainer">
+      Your enquiry has not been sent. Copy the brief below
+      to keep it ready while the company’s contact details are added.
+    </p>
+
+    <label for="enquiry-output" style="color:var(--muted)">
+      Review your details
+    </label>
+
+    <textarea id="enquiry-output" readonly></textarea>
+
+    <div class="dialog-actions">
+      <button class="button dark" id="copy-brief">
+        Copy project brief
+        <span aria-hidden="true">↗</span>
+      </button>
+
+      <a class="button" id="email-brief" hidden>
+        Open email app
+        <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+    <div
+      class="dialog-status"
+      id="copy-status"
+      role="status"
+      aria-live="polite"
+    ></div>
+
+  </div>
+</dialog>
+
+<dialog
+  class="lightbox"
+  id="photo-dialog"
+  aria-labelledby="photo-title"
+>
+  <div class="dialog-head">
+    <h2 id="photo-title">Project inspiration</h2>
+
+    <button
+      class="close-button"
+      data-close
+      aria-label="Close image"
+    >×</button>
+  </div>
+
+  <figure>
+    <img id="expanded-photo" alt="">
+    <figcaption id="photo-caption">
+      Stock image for inspiration.
+    </figcaption>
+  </figure>
+</dialog>
+
 <script>
 (() => {
   'use strict';
-  const $ = s => document.querySelector(s);
-  const $$ = s => [...document.querySelectorAll(s)];
+
+  const $ = selector => document.querySelector(selector);
+  const $$ = selector => [
+    ...document.querySelectorAll(selector)
+  ];
+
   $('#year').textContent = new Date().getFullYear();
-  if (!BUSINESS.preview) { $('#preview-banner').hidden = true; $('#preview-detail').hidden = true; $('#preview-robots').remove(); }
+
+  if (!BUSINESS.preview) {
+    $('#preview-banner').hidden = true;
+    $('#preview-detail').hidden = true;
+    $('#preview-robots').remove();
+  }
+
   const phone = BUSINESS.phone.trim();
   const email = BUSINESS.email.trim();
+
   if (phone) {
-    $$('[data-phone]').forEach(a => {a.textContent = phone; a.href = 'tel:' + phone.replace(/[^+\d]/g,''); a.hidden = false;});
-    $$('[data-call-button]').forEach(a => {a.href = 'tel:' + phone.replace(/[^+\d]/g,''); a.hidden = false;});
+    $$('[data-phone]').forEach(link => {
+      link.textContent = phone;
+      link.href = 'tel:' + phone.replace(/[^+\d]/g, '');
+      link.hidden = false;
+    });
+
+    $$('[data-call-button]').forEach(link => {
+      link.href = 'tel:' + phone.replace(/[^+\d]/g, '');
+      link.hidden = false;
+    });
   }
+
   if (email) {
-    $$('[data-email]').forEach(a => {a.textContent = email; a.href = 'mailto:' + email; a.hidden = false;});
-    $('#form-explainer').textContent = 'Prepare your enquiry, review the details, then open your email app to send it to Davidson Contracting.';
-    $('#brief-explainer').textContent = 'Your enquiry has not been sent yet. Choose Open email app, attach any photos you want to include, then press Send in your email app. If it doesn’t open, copy this brief and email it to ' + email + '.';
+    $$('[data-email]').forEach(link => {
+      link.textContent = email;
+      link.href = 'mailto:' + email;
+      link.hidden = false;
+    });
+
+    $('#form-explainer').textContent =
+      'Prepare your enquiry, review the details, then open ' +
+      'your email app to send it to Davidson Contracting.';
+
+    $('#brief-explainer').textContent =
+      'Your enquiry has not been sent yet. Choose Open email app, ' +
+      'attach any photos you want to include, then press Send ' +
+      'in your email app. If it doesn’t open, copy this brief ' +
+      'and email it to ' + email + '.';
   }
+
   if (BUSINESS.serviceArea.trim()) {
     $('[data-service-area]').textContent = BUSINESS.serviceArea;
-    $('[data-area-answer]').textContent = 'Our service area: ' + BUSINESS.serviceArea + '. Include your suburb when you enquire so we can confirm the location for your job.';
+
+    $('[data-area-answer]').textContent =
+      'Our service area: ' + BUSINESS.serviceArea +
+      '. Include your suburb when you enquire so we can ' +
+      'confirm the location for your job.';
   }
-  const menu = $('#mobile-nav'), toggle = $('#menu-toggle');
-  const closeMenu = () => {menu.hidden = true; toggle.setAttribute('aria-expanded','false'); toggle.textContent = 'Menu +';};
-  toggle.addEventListener('click', () => {const open = toggle.getAttribute('aria-expanded') === 'true'; menu.hidden = open; toggle.setAttribute('aria-expanded', String(!open)); toggle.textContent = open ? 'Menu +' : 'Close −';});
-  $$('#mobile-nav a').forEach(a => a.addEventListener('click', closeMenu));
-  document.addEventListener('keydown', e => {if(e.key === 'Escape' && !menu.hidden){closeMenu(); toggle.focus();}});
-  window.matchMedia('(min-width:801px)').addEventListener('change', e => {if(e.matches)closeMenu();});
-  $$('[data-service]').forEach(a => a.addEventListener('click', () => {$('#service').value = a.dataset.service;}));
-  $$('[data-close]').forEach(b => b.addEventListener('click', () => b.closest('dialog').close()));
-  $$('dialog').forEach(dialog => dialog.addEventListener('click', e => {if(e.target !== dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}));
-  $('#enquiry-form').addEventListener('submit', e => {
-    e.preventDefault();
-    const form = e.currentTarget;
-    if(!form.reportValidity()) return;
+
+  const menu = $('#mobile-nav');
+  const toggle = $('#menu-toggle');
+
+  const closeMenu = () => {
+    menu.hidden = true;
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.textContent = 'Menu +';
+  };
+
+  toggle.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') === 'true';
+
+    menu.hidden = open;
+    toggle.setAttribute('aria-expanded', String(!open));
+    toggle.textContent = open ? 'Menu +' : 'Close −';
+  });
+
+  $$('#mobile-nav a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && !menu.hidden) {
+      closeMenu();
+      toggle.focus();
+    }
+  });
+
+  window.matchMedia('(min-width:801px)').addEventListener(
+    'change',
+    event => {
+      if (event.matches) closeMenu();
+    }
+  );
+
+  $$('[data-service]').forEach(link => {
+    link.addEventListener('click', () => {
+      $('#service').value = link.dataset.service;
+    });
+  });
+
+  $$('[data-close]').forEach(button => {
+    button.addEventListener('click', () => {
+      button.closest('dialog').close();
+    });
+  });
+
+  $$('dialog').forEach(dialog => {
+    dialog.addEventListener('click', event => {
+      if (event.target !== dialog) return;
+
+      const rect = dialog.getBoundingClientRect();
+
+      if (
+        event.clientX < rect.left ||
+        event.clientX > rect.right ||
+        event.clientY < rect.top ||
+        event.clientY > rect.bottom
+      ) {
+        dialog.close();
+      }
+    });
+  });
+
+  $('#enquiry-form').addEventListener('submit', event => {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+
+    if (!form.reportValidity()) return;
+
     const data = new FormData(form);
-    const value = key => String(data.get(key)||'').trim();
-    const brief = 'PROJECT ENQUIRY — DAVIDSON CONTRACTING\n\nName: '+value('name')+'\nPhone: '+value('phone')+'\nEmail: '+value('email')+'\nSuburb: '+value('suburb')+'\nProject type: '+value('service')+'\n\nProject details:\n'+value('details');
+    const value = key => String(data.get(key) || '').trim();
+
+    const brief =
+      'PROJECT ENQUIRY — DAVIDSON CONTRACTING\n\n' +
+      'Name: ' + value('name') + '\n' +
+      'Phone: ' + value('phone') + '\n' +
+      'Email: ' + value('email') + '\n' +
+      'Suburb: ' + value('suburb') + '\n' +
+      'Project type: ' + value('service') + '\n\n' +
+      'Project details:\n' + value('details');
+
     $('#enquiry-output').value = brief;
     $('#copy-status').textContent = '';
-    if(email){$('#email-brief').href='mailto:'+email+'?subject='+encodeURIComponent('Project enquiry — '+value('service'))+'&body='+encodeURIComponent(brief);$('#email-brief').hidden=false;}
+
+    if (email) {
+      $('#email-brief').href =
+        'mailto:' + email +
+        '?subject=' +
+        encodeURIComponent('Project enquiry — ' + value('service')) +
+        '&body=' +
+        encodeURIComponent(brief);
+
+      $('#email-brief').hidden = false;
+    }
+
     $('#enquiry-dialog').showModal();
   });
+
   $('#copy-brief').addEventListener('click', async () => {
-    try {await navigator.clipboard.writeText($('#enquiry-output').value);$('#copy-status').textContent='Copied. Your enquiry has not been sent.';}
-    catch {$('#enquiry-output').focus();$('#enquiry-output').select();$('#copy-status').textContent='Select and copy the highlighted brief using your device’s copy command.';}
+    try {
+      await navigator.clipboard.writeText(
+        $('#enquiry-output').value
+      );
+
+      $('#copy-status').textContent =
+        'Copied. Your enquiry has not been sent.';
+    } catch {
+      $('#enquiry-output').focus();
+      $('#enquiry-output').select();
+
+      $('#copy-status').textContent =
+        'Select and copy the highlighted brief using ' +
+        'your device’s copy command.';
+    }
   });
-  $$('[data-photo]').forEach(b => b.addEventListener('click', () => {
-    const source=b.querySelector('img');$('#expanded-photo').src=source.currentSrc||source.src;$('#expanded-photo').alt=source.alt;
-    $('#photo-title').textContent=b.dataset.photo==='outdoor'?'Outdoor living inspiration':'Timber craftsmanship inspiration';
-    $('#photo-caption').textContent='Stock photograph from Pexels, shown for inspiration. Not a Davidson Contracting project.';
-    $('#photo-dialog').showModal();
-  }));
+
+  $$('[data-photo]').forEach(button => {
+    button.addEventListener('click', () => {
+      const source = button.querySelector('img');
+
+      $('#expanded-photo').src = source.currentSrc || source.src;
+      $('#expanded-photo').alt = source.alt;
+
+      $('#photo-title').textContent =
+        button.dataset.photo === 'outdoor'
+          ? 'Outdoor living inspiration'
+          : 'Timber craftsmanship inspiration';
+
+      $('#photo-caption').textContent =
+        'Stock photograph from Pexels, shown for inspiration. ' +
+        'Not a Davidson Contracting project.';
+
+      $('#photo-dialog').showModal();
+    });
+  });
 })();
 </script>
+
 </body>
 </html>
